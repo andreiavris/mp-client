@@ -66,7 +66,7 @@ public class TestSecureController {
         token.setIat(System.currentTimeMillis());
         token.setExp(System.currentTimeMillis() + 30000); // 30 Seconds expiration!
 
-        token.addAdditionalClaims("custom-value", "Jessie specific value");
+        token.addAdditionalClaims("custom-value", "Andrei MicroProfile presentation");
 
         token.setGroups(Arrays.asList("user", "protected"));
 
