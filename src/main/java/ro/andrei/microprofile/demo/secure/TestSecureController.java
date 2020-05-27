@@ -60,8 +60,8 @@ public class TestSecureController {
         token.setIss("https://microprofile.andrei.ro");  // Must match the expected issues configuration values
         token.setJti(UUID.randomUUID().toString());
 
-        token.setSub("Jessie");  // Sub is required for WildFly Swarm
-        token.setUpn("Jessie");
+        token.setSub("Andrei");  // Sub is required for WildFly Swarm
+        token.setUpn("Andrei");
 
         token.setIat(System.currentTimeMillis());
         token.setExp(System.currentTimeMillis() + 30000); // 30 Seconds expiration!
